@@ -34,4 +34,5 @@ abstract final class AppColors {
   static const Color avatarBrume = Color(0xFFD9D4CC);
   static const Color ideeSable = Color(0xFFEDE6DD);
   static const Color ideeSauge = Color(0xFFE3E9E4);
+  static const Color ideeLavande = Color(0xFFE8E5EE);
 }

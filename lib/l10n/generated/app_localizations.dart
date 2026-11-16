@@ -178,6 +178,240 @@ abstract class AppLocalizations {
   /// **'Nouvelle sortie'**
   String get newOutingTitle;
 
+  /// No description provided for @newOutingStepOne.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nouvelle sortie, étape 1 sur 2'**
+  String get newOutingStepOne;
+
+  /// No description provided for @newOutingClose.
+  ///
+  /// In fr, this message translates to:
+  /// **'Fermer'**
+  String get newOutingClose;
+
+  /// No description provided for @newOutingStepLabel.
+  ///
+  /// In fr, this message translates to:
+  /// **'Étape 1 sur 2'**
+  String get newOutingStepLabel;
+
+  /// No description provided for @newOutingHeading.
+  ///
+  /// In fr, this message translates to:
+  /// **'On sort quand, et pour faire quoi ?'**
+  String get newOutingHeading;
+
+  /// No description provided for @newOutingGroupLegend.
+  ///
+  /// In fr, this message translates to:
+  /// **'Groupe'**
+  String get newOutingGroupLegend;
+
+  /// No description provided for @newOutingGroupChip.
+  ///
+  /// In fr, this message translates to:
+  /// **'{name} · {count}'**
+  String newOutingGroupChip(String name, int count);
+
+  /// No description provided for @newOutingGroupsEmpty.
+  ///
+  /// In fr, this message translates to:
+  /// **'Vous n\'avez pas encore de groupe.'**
+  String get newOutingGroupsEmpty;
+
+  /// No description provided for @newOutingSlotsLegend.
+  ///
+  /// In fr, this message translates to:
+  /// **'Quand tout le monde est libre'**
+  String get newOutingSlotsLegend;
+
+  /// No description provided for @newOutingSlotsPickGroup.
+  ///
+  /// In fr, this message translates to:
+  /// **'Choisissez un groupe pour voir les créneaux.'**
+  String get newOutingSlotsPickGroup;
+
+  /// No description provided for @newOutingSlotsEmpty.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun créneau en commun pour ce groupe.'**
+  String get newOutingSlotsEmpty;
+
+  /// No description provided for @newOutingSlotDay.
+  ///
+  /// In fr, this message translates to:
+  /// **'{date}'**
+  String newOutingSlotDay(DateTime date);
+
+  /// No description provided for @newOutingSlotFree.
+  ///
+  /// In fr, this message translates to:
+  /// **'{free} sur {total}'**
+  String newOutingSlotFree(int free, int total);
+
+  /// No description provided for @newOutingWishLabel.
+  ///
+  /// In fr, this message translates to:
+  /// **'Votre envie'**
+  String get newOutingWishLabel;
+
+  /// No description provided for @newOutingWishHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Un endroit pour parler, avec un peu de jeu, pas trop loin'**
+  String get newOutingWishHint;
+
+  /// No description provided for @newOutingBudgetLegend.
+  ///
+  /// In fr, this message translates to:
+  /// **'Budget'**
+  String get newOutingBudgetLegend;
+
+  /// No description provided for @newOutingTravelLegend.
+  ///
+  /// In fr, this message translates to:
+  /// **'Trajet maximal'**
+  String get newOutingTravelLegend;
+
+  /// No description provided for @newOutingTravelOption.
+  ///
+  /// In fr, this message translates to:
+  /// **'{minutes} min'**
+  String newOutingTravelOption(int minutes);
+
+  /// No description provided for @newOutingSubmit.
+  ///
+  /// In fr, this message translates to:
+  /// **'Trouver des lieux'**
+  String get newOutingSubmit;
+
+  /// No description provided for @newOutingLoadError.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de charger cette étape.'**
+  String get newOutingLoadError;
+
+  /// No description provided for @proposalsTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Propositions'**
+  String get proposalsTitle;
+
+  /// No description provided for @proposalsBack.
+  ///
+  /// In fr, this message translates to:
+  /// **'Retour'**
+  String get proposalsBack;
+
+  /// No description provided for @proposalsStep.
+  ///
+  /// In fr, this message translates to:
+  /// **'Étape 2 sur 2'**
+  String get proposalsStep;
+
+  /// No description provided for @proposalsHeading.
+  ///
+  /// In fr, this message translates to:
+  /// **'Les lieux sont classés pour que le trajet le plus long reste court.'**
+  String get proposalsHeading;
+
+  /// No description provided for @proposalsRecapGroup.
+  ///
+  /// In fr, this message translates to:
+  /// **'{group} · {slot}'**
+  String proposalsRecapGroup(String group, String slot);
+
+  /// No description provided for @proposalsRecapCriteria.
+  ///
+  /// In fr, this message translates to:
+  /// **'{budget} · trajet max {minutes} min'**
+  String proposalsRecapCriteria(String budget, int minutes);
+
+  /// No description provided for @proposalsMeta.
+  ///
+  /// In fr, this message translates to:
+  /// **'{category} · {price} € · {duration}'**
+  String proposalsMeta(String category, int price, String duration);
+
+  /// No description provided for @proposalsDurationMinutes.
+  ///
+  /// In fr, this message translates to:
+  /// **'jusqu\'à {minutes} min'**
+  String proposalsDurationMinutes(int minutes);
+
+  /// No description provided for @proposalsDurationHours.
+  ///
+  /// In fr, this message translates to:
+  /// **'jusqu\'à {hours} h'**
+  String proposalsDurationHours(int hours);
+
+  /// No description provided for @proposalsDurationHoursMinutes.
+  ///
+  /// In fr, this message translates to:
+  /// **'jusqu\'à {hours} h {minutes}'**
+  String proposalsDurationHoursMinutes(int hours, String minutes);
+
+  /// No description provided for @proposalsTravelRange.
+  ///
+  /// In fr, this message translates to:
+  /// **'{min} à {max} min pour tous'**
+  String proposalsTravelRange(int min, int max);
+
+  /// No description provided for @proposalsTravelSame.
+  ///
+  /// In fr, this message translates to:
+  /// **'{minutes} min pour tous'**
+  String proposalsTravelSame(int minutes);
+
+  /// No description provided for @proposalsLongest.
+  ///
+  /// In fr, this message translates to:
+  /// **'Trajet le plus long : {minutes} min'**
+  String proposalsLongest(int minutes);
+
+  /// No description provided for @proposalsChoose.
+  ///
+  /// In fr, this message translates to:
+  /// **'Choisir {name}'**
+  String proposalsChoose(String name);
+
+  /// No description provided for @proposalsSubmit.
+  ///
+  /// In fr, this message translates to:
+  /// **'Proposer au groupe'**
+  String get proposalsSubmit;
+
+  /// No description provided for @proposalsSubmitCaption.
+  ///
+  /// In fr, this message translates to:
+  /// **'Le groupe reçoit une notification et répond d\'un geste.'**
+  String get proposalsSubmitCaption;
+
+  /// No description provided for @proposalsEmptyTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun lieu ne convient'**
+  String get proposalsEmptyTitle;
+
+  /// No description provided for @proposalsEmptyBody.
+  ///
+  /// In fr, this message translates to:
+  /// **'Avec ces critères, aucun lieu n\'est à distance juste pour tout le monde. Élargissez le budget ou le trajet.'**
+  String get proposalsEmptyBody;
+
+  /// No description provided for @proposalsEmptyAction.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier mes critères'**
+  String get proposalsEmptyAction;
+
+  /// No description provided for @proposalsErrorBody.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de charger les propositions.'**
+  String get proposalsErrorBody;
+
   /// No description provided for @loginTitle.
   ///
   /// In fr, this message translates to:

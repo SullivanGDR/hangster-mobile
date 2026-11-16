@@ -1,6 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hangster_mobile/app/app.dart';
+import 'package:hangster_mobile/features/outings/data/fake_outing_planner_repository.dart';
+import 'package:hangster_mobile/features/outings/presentation/outing_planner_providers.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -8,7 +10,15 @@ import '../../support/signed_in.dart';
 
 Future<void> _pump(WidgetTester tester) async {
   await tester.pumpWidget(
-    ProviderScope(overrides: signedInOverrides(), child: const HangsterApp()),
+    ProviderScope(
+      overrides: [
+        ...signedInOverrides(),
+        outingPlannerRepositoryProvider.overrideWithValue(
+          FakeOutingPlannerRepository(latency: Duration.zero),
+        ),
+      ],
+      child: const HangsterApp(),
+    ),
   );
   await tester.pumpAndSettle();
 }
@@ -44,7 +54,7 @@ void main() {
     await _pump(tester);
     await tester.tap(find.byIcon(LucideIcons.plus));
     await tester.pumpAndSettle();
-    expect(find.text('Nouvelle sortie'), findsOneWidget);
+    expect(find.text('On sort quand, et pour faire quoi ?'), findsOneWidget);
     expect(find.text('Sorties'), findsNothing);
   });
 

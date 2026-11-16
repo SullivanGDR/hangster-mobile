@@ -143,6 +143,59 @@ abstract final class AppTextStyles {
     color: AppColors.blanc,
   );
 
+  // Nouvelle sortie (maquette mobile).
+  static const TextStyle outingHeading = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 34,
+    fontWeight: FontWeight.w700,
+    letterSpacing: -1.36,
+    height: 1.05,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle legend = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: bodySize,
+    fontWeight: FontWeight.w600,
+    fontVariations: [_w650],
+    height: 1.3,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle wishInput = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 21,
+    fontWeight: FontWeight.w600,
+    letterSpacing: -0.42,
+    height: 1.3,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle wishHint = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 21,
+    fontWeight: FontWeight.w600,
+    letterSpacing: -0.42,
+    height: 1.3,
+    color: AppColors.gris,
+  );
+
+  static const TextStyle tag = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+    height: 1.2,
+    color: AppColors.braiseTexte,
+  );
+
+  static const TextStyle slotDay = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: bodySize,
+    fontWeight: FontWeight.w700,
+    height: 1.3,
+    color: AppColors.encre,
+  );
+
   static const TextStyle avatarInitials = TextStyle(
     fontFamily: bodyFamily,
     fontSize: 10,
@@ -166,5 +219,24 @@ abstract final class AppTextStyles {
     fontWeight: FontWeight.w400,
     height: 1.45,
     color: AppColors.gris,
+  );
+
+  /// Titre d'écran de formulaire (maquettes étapes de sortie).
+  static const TextStyle proposalsHeading = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 30,
+    fontWeight: FontWeight.w700,
+    letterSpacing: -1.2,
+    height: 1.1,
+    color: AppColors.encre,
+  );
+
+  /// Durée de trajet d'une proposition.
+  static const TextStyle proposalTime = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+    height: 1.45,
+    color: AppColors.encre,
   );
 }

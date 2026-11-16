@@ -66,4 +66,43 @@ abstract final class AppDimens {
   static const double ideaThumbHeight = 130;
   static const double ideaGap = 10;
   static const double heroTitleTop = 4;
+
+  // Nouvelle sortie (maquette mobile).
+  static const double outingTopPadding = 12;
+  static const double outingSectionGap = 24;
+  static const double outingLegendGap = 10;
+  static const double outingChipHeight = 42;
+  static const double outingChipPaddingH = 16;
+  static const double outingChipGap = 8;
+  static const double outingTagGap = 6;
+  static const double outingTagPaddingV = 6;
+  static const double outingTagPaddingH = 12;
+  static const double outingSlotWidth = 104;
+  static const double outingSlotRadius = 16;
+  static const double outingSlotPaddingRest = 13;
+  static const double outingSlotPaddingSelected = 12;
+  static const double outingSlotGap = 2;
+  static const double outingWishPadding = 16;
+  static const double outingWishGap = 12;
+  static const double outingCtaHeight = 54;
+  static const double outingCtaPaddingTop = 14;
+  static const double outingCtaPaddingBottom = 16;
+  static const double outingCtaIconGap = 10;
+  static const double outingCtaIconSize = 18;
+  static const double outingCloseSize = 44;
+  static const double outingCloseIconSize = 18;
+  static const double outingLoaderWidth = 72;
+  static const int outingWishMinLines = 3;
+
+  // Propositions de sortie (maquette « Ce soir »).
+  static const double backButtonSize = 44;
+  static const double proposalThumbSize = 64;
+  static const double proposalThumbRadius = 14;
+  static const double proposalCardPadding = 14;
+  static const double proposalRadioSize = 22;
+  static const double proposalRadioDotSize = 10;
+  static const double proposalCtaHeight = 54;
+  static const double proposalCtaPaddingTop = 14;
+  static const double proposalCtaPaddingBottom = 20;
+  static const double proposalListBottomPadding = 24;
 }

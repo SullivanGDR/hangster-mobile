@@ -52,6 +52,159 @@ class AppLocalizationsFr extends AppLocalizations {
   String get newOutingTitle => 'Nouvelle sortie';
 
   @override
+  String get newOutingStepOne => 'Nouvelle sortie, étape 1 sur 2';
+
+  @override
+  String get newOutingClose => 'Fermer';
+
+  @override
+  String get newOutingStepLabel => 'Étape 1 sur 2';
+
+  @override
+  String get newOutingHeading => 'On sort quand, et pour faire quoi ?';
+
+  @override
+  String get newOutingGroupLegend => 'Groupe';
+
+  @override
+  String newOutingGroupChip(String name, int count) {
+    return '$name · $count';
+  }
+
+  @override
+  String get newOutingGroupsEmpty => 'Vous n\'avez pas encore de groupe.';
+
+  @override
+  String get newOutingSlotsLegend => 'Quand tout le monde est libre';
+
+  @override
+  String get newOutingSlotsPickGroup =>
+      'Choisissez un groupe pour voir les créneaux.';
+
+  @override
+  String get newOutingSlotsEmpty => 'Aucun créneau en commun pour ce groupe.';
+
+  @override
+  String newOutingSlotDay(DateTime date) {
+    final intl.DateFormat dateDateFormat = intl.DateFormat('E d', localeName);
+    final String dateString = dateDateFormat.format(date);
+
+    return '$dateString';
+  }
+
+  @override
+  String newOutingSlotFree(int free, int total) {
+    return '$free sur $total';
+  }
+
+  @override
+  String get newOutingWishLabel => 'Votre envie';
+
+  @override
+  String get newOutingWishHint =>
+      'Un endroit pour parler, avec un peu de jeu, pas trop loin';
+
+  @override
+  String get newOutingBudgetLegend => 'Budget';
+
+  @override
+  String get newOutingTravelLegend => 'Trajet maximal';
+
+  @override
+  String newOutingTravelOption(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String get newOutingSubmit => 'Trouver des lieux';
+
+  @override
+  String get newOutingLoadError => 'Impossible de charger cette étape.';
+
+  @override
+  String get proposalsTitle => 'Propositions';
+
+  @override
+  String get proposalsBack => 'Retour';
+
+  @override
+  String get proposalsStep => 'Étape 2 sur 2';
+
+  @override
+  String get proposalsHeading =>
+      'Les lieux sont classés pour que le trajet le plus long reste court.';
+
+  @override
+  String proposalsRecapGroup(String group, String slot) {
+    return '$group · $slot';
+  }
+
+  @override
+  String proposalsRecapCriteria(String budget, int minutes) {
+    return '$budget · trajet max $minutes min';
+  }
+
+  @override
+  String proposalsMeta(String category, int price, String duration) {
+    return '$category · $price € · $duration';
+  }
+
+  @override
+  String proposalsDurationMinutes(int minutes) {
+    return 'jusqu\'à $minutes min';
+  }
+
+  @override
+  String proposalsDurationHours(int hours) {
+    return 'jusqu\'à $hours h';
+  }
+
+  @override
+  String proposalsDurationHoursMinutes(int hours, String minutes) {
+    return 'jusqu\'à $hours h $minutes';
+  }
+
+  @override
+  String proposalsTravelRange(int min, int max) {
+    return '$min à $max min pour tous';
+  }
+
+  @override
+  String proposalsTravelSame(int minutes) {
+    return '$minutes min pour tous';
+  }
+
+  @override
+  String proposalsLongest(int minutes) {
+    return 'Trajet le plus long : $minutes min';
+  }
+
+  @override
+  String proposalsChoose(String name) {
+    return 'Choisir $name';
+  }
+
+  @override
+  String get proposalsSubmit => 'Proposer au groupe';
+
+  @override
+  String get proposalsSubmitCaption =>
+      'Le groupe reçoit une notification et répond d\'un geste.';
+
+  @override
+  String get proposalsEmptyTitle => 'Aucun lieu ne convient';
+
+  @override
+  String get proposalsEmptyBody =>
+      'Avec ces critères, aucun lieu n\'est à distance juste pour tout le monde. Élargissez le budget ou le trajet.';
+
+  @override
+  String get proposalsEmptyAction => 'Modifier mes critères';
+
+  @override
+  String get proposalsErrorBody => 'Impossible de charger les propositions.';
+
+  @override
   String get loginTitle => 'Connexion';
 
   @override

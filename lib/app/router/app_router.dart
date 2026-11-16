@@ -12,6 +12,7 @@ import '../../features/invitation/presentation/invitation_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/outings/presentation/new_outing_screen.dart';
 import '../../features/outings/presentation/outings_screen.dart';
+import '../../features/outings/presentation/proposals_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import 'app_shell.dart';
 
@@ -20,6 +21,7 @@ abstract final class AppRoutes {
   static const String home = '/';
   static const String outings = '/outings';
   static const String newOuting = '/outings/new';
+  static const String proposals = '/outings/new/proposals';
   static const String groups = '/groups';
   static const String profile = '/profile';
   static const String login = '/login';
@@ -122,6 +124,11 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: AppRoutes.newOuting,
         parentNavigatorKey: _rootNavigatorKey,
         builder: (context, state) => const NewOutingScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.proposals,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const ProposalsScreen(),
       ),
       GoRoute(
         path: AppRoutes.invitationPattern,
