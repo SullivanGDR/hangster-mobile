@@ -1,0 +1,20 @@
+{
+  "@@locale": "fr",
+  "appName": "Hangster",
+  "navHome": "Accueil",
+  "navOutings": "Sorties",
+  "navNewOuting": "Nouvelle sortie",
+  "navGroups": "Groupes",
+  "navProfile": "Profil",
+  "loadingLabel": "Chargement",
+  "errorGeneric": "Une erreur est survenue.",
+  "errorRetry": "Réessayer",
+  "homeTitle": "Accueil",
+  "outingsTitle": "Sorties",
+  "groupsTitle": "Groupes",
+  "profileTitle": "Profil",
+  "newOutingTitle": "Nouvelle sortie",
+  "invitationTitle": "Invitation",
+  "invitationCode": "Code : {code}",
+  "@invitationCode": {"placeholders": {"code": {"type": "String"}}}
+}
