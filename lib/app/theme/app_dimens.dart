@@ -20,4 +20,9 @@ abstract final class AppDimens {
   /// Bouton central "nouvelle sortie" de la barre du bas.
   static const double newOutingButtonSize = 56;
   static const double navBarHeight = 64;
+
+  /// Largeur maximale d'un formulaire (grands ecrans).
+  static const double formMaxWidth = 440;
+  static const double logoWidth = 160;
+  static const double loaderWidth = 56;
 }
