@@ -30,10 +30,8 @@ class AppShell extends StatelessWidget {
           border: Border(top: BorderSide(color: AppColors.ligne)),
         ),
         child: SafeArea(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(
-              minHeight: AppDimens.navBarHeight,
-            ),
+          child: SizedBox(
+            height: AppDimens.navBarHeight,
             child: Row(
               children: [
                 _NavItem(

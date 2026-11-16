@@ -17,6 +17,16 @@ void main() {
     expect(find.bySemanticsLabel('Nouvelle sortie'), findsOneWidget);
   });
 
+  testWidgets('la barre est collee en bas de l\'ecran', (tester) async {
+    await _pump(tester);
+    final screenHeight =
+        tester.view.physicalSize.height / tester.view.devicePixelRatio;
+    final plus = tester.getRect(find.bySemanticsLabel('Nouvelle sortie'));
+    final groupes = tester.getRect(find.text('Groupes'));
+    expect(plus.bottom, greaterThan(screenHeight - 100));
+    expect(groupes.bottom, greaterThan(screenHeight - 100));
+  });
+
   testWidgets('tap sur Groupes change d\'ecran', (tester) async {
     await _pump(tester);
     expect(find.text('Groupes'), findsOneWidget);
