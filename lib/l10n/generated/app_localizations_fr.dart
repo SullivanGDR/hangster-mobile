@@ -249,4 +249,179 @@ class AppLocalizationsFr extends AppLocalizations {
   String invitationCode(String code) {
     return 'Code : $code';
   }
+
+  @override
+  String homeDate(DateTime date) {
+    final intl.DateFormat dateDateFormat = intl.DateFormat(
+      'EEEE d MMMM',
+      localeName,
+    );
+    final String dateString = dateDateFormat.format(date);
+
+    return '$dateString';
+  }
+
+  @override
+  String homeGreetingMorning(String name) {
+    return 'Bonjour $name';
+  }
+
+  @override
+  String homeGreetingEvening(String name) {
+    return 'Bonsoir $name';
+  }
+
+  @override
+  String get homeGreetingMorningAnon => 'Bonjour';
+
+  @override
+  String get homeGreetingEveningAnon => 'Bonsoir';
+
+  @override
+  String get homeNotifications => 'Notifications';
+
+  @override
+  String homeNotificationsNew(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nouvelles',
+      one: '$count nouvelle',
+    );
+    return 'Notifications, $_temp0';
+  }
+
+  @override
+  String homeNextOutingLabel(String group) {
+    return 'Prochaine sortie · $group';
+  }
+
+  @override
+  String homeNextOutingWhen(DateTime date, DateTime time) {
+    final intl.DateFormat dateDateFormat = intl.DateFormat(
+      'EEEE d',
+      localeName,
+    );
+    final String dateString = dateDateFormat.format(date);
+    final intl.DateFormat timeDateFormat = intl.DateFormat(
+      'H \'h\' mm',
+      localeName,
+    );
+    final String timeString = timeDateFormat.format(time);
+
+    return '$dateString · $timeString';
+  }
+
+  @override
+  String homeNextOutingConfirmed(int confirmed, int total) {
+    return '$confirmed sur $total viennent';
+  }
+
+  @override
+  String homeAttendeesMore(int count) {
+    return '+$count';
+  }
+
+  @override
+  String get homeCountdownStarted => 'En cours';
+
+  @override
+  String get homeCountdownTonight => 'Ce soir';
+
+  @override
+  String get homeCountdownToday => 'Aujourd\'hui';
+
+  @override
+  String get homeCountdownTomorrow => 'Demain';
+
+  @override
+  String homeCountdownDays(int days) {
+    return 'J-$days';
+  }
+
+  @override
+  String homeCountdownSemantics(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dans $count jours',
+      one: 'Dans $count jour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeFreeBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amis libres ce soir',
+      one: '$count ami libre ce soir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeFreeNames(String others, String last) {
+    return '$others et $last';
+  }
+
+  @override
+  String get homeTodoTitle => 'À faire';
+
+  @override
+  String homeTodoVote(DateTime date) {
+    final intl.DateFormat dateDateFormat = intl.DateFormat.EEEE(localeName);
+    final String dateString = dateDateFormat.format(date);
+
+    return 'Voter pour $dateString';
+  }
+
+  @override
+  String get homeTodoVoteNoDate => 'Voter pour la prochaine sortie';
+
+  @override
+  String get homeTodoAvailability => 'Donner vos disponibilités';
+
+  @override
+  String homeTodoGroup(String group) {
+    return '$group';
+  }
+
+  @override
+  String homeTodoDueHours(String group, int hours) {
+    return '$group · clôture dans $hours h';
+  }
+
+  @override
+  String homeTodoDueDays(String group, int days) {
+    return '$group · clôture dans $days j';
+  }
+
+  @override
+  String get homeTodoVoteAction => 'Voter';
+
+  @override
+  String get homeTodoAvailabilityAction => 'Répondre';
+
+  @override
+  String get homeIdeasTitle => 'Idées pour ce week-end';
+
+  @override
+  String homeIdeaMeta(String category, int price, int minutes) {
+    return '$category · $price € · $minutes min';
+  }
+
+  @override
+  String get homeEmptyTitle => 'Aucune sortie en vue';
+
+  @override
+  String get homeEmptyBody =>
+      'Lancez une sortie : dites ce dont vous avez envie, le groupe vote, c\'est calé.';
+
+  @override
+  String get homeEmptyAction => 'Nouvelle sortie';
+
+  @override
+  String get homeErrorBody => 'Impossible de charger votre accueil.';
 }

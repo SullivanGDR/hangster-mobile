@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hangster_mobile/app/app.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:material_ui/material_ui.dart';
 
 import '../../support/signed_in.dart';
@@ -41,7 +42,7 @@ void main() {
 
   testWidgets('tap sur + ouvre la nouvelle sortie', (tester) async {
     await _pump(tester);
-    await tester.tap(find.byIcon(Icons.add));
+    await tester.tap(find.byIcon(LucideIcons.plus));
     await tester.pumpAndSettle();
     expect(find.text('Nouvelle sortie'), findsOneWidget);
     expect(find.text('Sorties'), findsNothing);
@@ -58,7 +59,10 @@ void main() {
         of: find.text('Profil'),
         matching: find.byType(InkResponse),
       ),
-      find.ancestor(of: find.byIcon(Icons.add), matching: find.byType(InkWell)),
+      find.ancestor(
+        of: find.byIcon(LucideIcons.plus),
+        matching: find.byType(InkWell),
+      ),
     ]) {
       final size = tester.getSize(finder.first);
       expect(size.width, greaterThanOrEqualTo(48));

@@ -71,4 +71,100 @@ abstract final class AppTextStyles {
     height: 1.3,
     color: AppColors.gris,
   );
+
+  // Accueil (maquette mobile). Grade 650 via la police variable.
+  static const FontVariation _w650 = FontVariation('wght', 650);
+
+  static const TextStyle greeting = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
+    letterSpacing: -1.28,
+    height: 1.1,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle hero = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
+    letterSpacing: -0.98,
+    height: 1.1,
+    color: AppColors.blanc,
+  );
+
+  static const TextStyle strongNumber = TextStyle(
+    fontFamily: displayFamily,
+    fontSize: 34,
+    fontWeight: FontWeight.w700,
+    letterSpacing: -1.36,
+    height: 1.2,
+    color: AppColors.braise,
+  );
+
+  static const TextStyle sectionTitle = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    height: 1.45,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle bodyStrong = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: bodySize,
+    fontWeight: FontWeight.w600,
+    fontVariations: [_w650],
+    height: 1.45,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle meta = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+    height: 1.45,
+    color: AppColors.gris,
+  );
+
+  static const TextStyle date = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: labelSize,
+    fontWeight: FontWeight.w400,
+    height: 1.45,
+    color: AppColors.gris,
+  );
+
+  static const TextStyle pill = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: labelSize,
+    fontWeight: FontWeight.w600,
+    height: 1.2,
+    color: AppColors.blanc,
+  );
+
+  static const TextStyle avatarInitials = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 10,
+    fontWeight: FontWeight.w700,
+    height: 1,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle navLabelActive = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
+    fontVariations: [_w650],
+    height: 1.45,
+    color: AppColors.encre,
+  );
+
+  static const TextStyle navLabel = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 11,
+    fontWeight: FontWeight.w400,
+    height: 1.45,
+    color: AppColors.gris,
+  );
 }

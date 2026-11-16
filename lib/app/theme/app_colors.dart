@@ -21,4 +21,17 @@ abstract final class AppColors {
   static const Color papier = Color(0xFFF6F4F0);
 
   static const Color blanc = Color(0xFFFFFFFF);
+
+  /// Séparateur de la barre du bas.
+  static const Color ligneNav = Color(0xFFF0EEEA);
+
+  /// Libellé sur fond sombre.
+  static const Color grisClair = Color(0xFFB5B0A9);
+
+  /// Texte secondaire sur fond sombre.
+  static const Color brumeClaire = Color(0xFFD6D2CC);
+
+  static const Color avatarBrume = Color(0xFFD9D4CC);
+  static const Color ideeSable = Color(0xFFEDE6DD);
+  static const Color ideeSauge = Color(0xFFE3E9E4);
 }

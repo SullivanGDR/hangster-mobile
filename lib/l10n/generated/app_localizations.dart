@@ -537,6 +537,210 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Code : {code}'**
   String invitationCode(String code);
+
+  /// No description provided for @homeDate.
+  ///
+  /// In fr, this message translates to:
+  /// **'{date}'**
+  String homeDate(DateTime date);
+
+  /// No description provided for @homeGreetingMorning.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonjour {name}'**
+  String homeGreetingMorning(String name);
+
+  /// No description provided for @homeGreetingEvening.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonsoir {name}'**
+  String homeGreetingEvening(String name);
+
+  /// No description provided for @homeGreetingMorningAnon.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonjour'**
+  String get homeGreetingMorningAnon;
+
+  /// No description provided for @homeGreetingEveningAnon.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonsoir'**
+  String get homeGreetingEveningAnon;
+
+  /// No description provided for @homeNotifications.
+  ///
+  /// In fr, this message translates to:
+  /// **'Notifications'**
+  String get homeNotifications;
+
+  /// No description provided for @homeNotificationsNew.
+  ///
+  /// In fr, this message translates to:
+  /// **'Notifications, {count, plural, one{{count} nouvelle} other{{count} nouvelles}}'**
+  String homeNotificationsNew(int count);
+
+  /// No description provided for @homeNextOutingLabel.
+  ///
+  /// In fr, this message translates to:
+  /// **'Prochaine sortie · {group}'**
+  String homeNextOutingLabel(String group);
+
+  /// No description provided for @homeNextOutingWhen.
+  ///
+  /// In fr, this message translates to:
+  /// **'{date} · {time}'**
+  String homeNextOutingWhen(DateTime date, DateTime time);
+
+  /// No description provided for @homeNextOutingConfirmed.
+  ///
+  /// In fr, this message translates to:
+  /// **'{confirmed} sur {total} viennent'**
+  String homeNextOutingConfirmed(int confirmed, int total);
+
+  /// No description provided for @homeAttendeesMore.
+  ///
+  /// In fr, this message translates to:
+  /// **'+{count}'**
+  String homeAttendeesMore(int count);
+
+  /// No description provided for @homeCountdownStarted.
+  ///
+  /// In fr, this message translates to:
+  /// **'En cours'**
+  String get homeCountdownStarted;
+
+  /// No description provided for @homeCountdownTonight.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ce soir'**
+  String get homeCountdownTonight;
+
+  /// No description provided for @homeCountdownToday.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aujourd\'hui'**
+  String get homeCountdownToday;
+
+  /// No description provided for @homeCountdownTomorrow.
+  ///
+  /// In fr, this message translates to:
+  /// **'Demain'**
+  String get homeCountdownTomorrow;
+
+  /// No description provided for @homeCountdownDays.
+  ///
+  /// In fr, this message translates to:
+  /// **'J-{days}'**
+  String homeCountdownDays(int days);
+
+  /// No description provided for @homeCountdownSemantics.
+  ///
+  /// In fr, this message translates to:
+  /// **'{count, plural, one{Dans {count} jour} other{Dans {count} jours}}'**
+  String homeCountdownSemantics(int count);
+
+  /// No description provided for @homeFreeBanner.
+  ///
+  /// In fr, this message translates to:
+  /// **'{count, plural, one{{count} ami libre ce soir} other{{count} amis libres ce soir}}'**
+  String homeFreeBanner(int count);
+
+  /// No description provided for @homeFreeNames.
+  ///
+  /// In fr, this message translates to:
+  /// **'{others} et {last}'**
+  String homeFreeNames(String others, String last);
+
+  /// No description provided for @homeTodoTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'À faire'**
+  String get homeTodoTitle;
+
+  /// No description provided for @homeTodoVote.
+  ///
+  /// In fr, this message translates to:
+  /// **'Voter pour {date}'**
+  String homeTodoVote(DateTime date);
+
+  /// No description provided for @homeTodoVoteNoDate.
+  ///
+  /// In fr, this message translates to:
+  /// **'Voter pour la prochaine sortie'**
+  String get homeTodoVoteNoDate;
+
+  /// No description provided for @homeTodoAvailability.
+  ///
+  /// In fr, this message translates to:
+  /// **'Donner vos disponibilités'**
+  String get homeTodoAvailability;
+
+  /// No description provided for @homeTodoGroup.
+  ///
+  /// In fr, this message translates to:
+  /// **'{group}'**
+  String homeTodoGroup(String group);
+
+  /// No description provided for @homeTodoDueHours.
+  ///
+  /// In fr, this message translates to:
+  /// **'{group} · clôture dans {hours} h'**
+  String homeTodoDueHours(String group, int hours);
+
+  /// No description provided for @homeTodoDueDays.
+  ///
+  /// In fr, this message translates to:
+  /// **'{group} · clôture dans {days} j'**
+  String homeTodoDueDays(String group, int days);
+
+  /// No description provided for @homeTodoVoteAction.
+  ///
+  /// In fr, this message translates to:
+  /// **'Voter'**
+  String get homeTodoVoteAction;
+
+  /// No description provided for @homeTodoAvailabilityAction.
+  ///
+  /// In fr, this message translates to:
+  /// **'Répondre'**
+  String get homeTodoAvailabilityAction;
+
+  /// No description provided for @homeIdeasTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Idées pour ce week-end'**
+  String get homeIdeasTitle;
+
+  /// No description provided for @homeIdeaMeta.
+  ///
+  /// In fr, this message translates to:
+  /// **'{category} · {price} € · {minutes} min'**
+  String homeIdeaMeta(String category, int price, int minutes);
+
+  /// No description provided for @homeEmptyTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucune sortie en vue'**
+  String get homeEmptyTitle;
+
+  /// No description provided for @homeEmptyBody.
+  ///
+  /// In fr, this message translates to:
+  /// **'Lancez une sortie : dites ce dont vous avez envie, le groupe vote, c\'est calé.'**
+  String get homeEmptyBody;
+
+  /// No description provided for @homeEmptyAction.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nouvelle sortie'**
+  String get homeEmptyAction;
+
+  /// No description provided for @homeErrorBody.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de charger votre accueil.'**
+  String get homeErrorBody;
 }
 
 class _AppLocalizationsDelegate
